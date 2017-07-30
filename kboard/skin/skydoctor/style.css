@@ -1,0 +1,928 @@
+/**
+ *	Import
+ */
+/**
+ *	Variables
+ */
+/**
+ *	Variables
+ */
+/**
+ *  Mixins
+ */
+img {
+  border: 0; }
+
+/**
+ *	General (Overwrite)
+ */
+a:hover {
+  text-decoration: none; }
+
+.entry-content a:hover {
+  text-decoration: none; }
+
+#wp-kboard_content-media-buttons {
+  display: none; }
+
+/**
+ *  Main
+ */
+.page-template-default .vce-page .entry-content {
+  width: 100%;
+  max-width: 100%; }
+
+.home #kboard-default-list .kboard-search, .home #kboard-default-list .kboard-control, .home #kboard-default-list .kboard-pagination, .home #kboard-default-list .kboard-list-header {
+  display: none; }
+.home #kboard-default-list thead {
+  display: none; }
+
+#kboard-default-list .kboard-category.category-mobile, #kboard-default-list .kboard-category.category-pc {
+  display: none; }
+
+#main-box-1 #kboard-default-latest .kboard-list-notice {
+  display: none; }
+
+.main-box-title {
+  padding: 22px; }
+  .main-box-title div {
+    margin-left: 48px;
+    display: inline-block; }
+    .main-box-title div:first-child {
+      float: left;
+      margin-left: 20px; }
+
+.popular-latest-posts h3 {
+  color: #2783aa; }
+
+.vce-module-columns #main-box-2 .main-box-title {
+  border-top-color: #F1AA3D;
+  color: #FD9941; }
+.vce-module-columns #main-box-3 .main-box-title {
+  border-top-color: #5374C0;
+  color: #5173BF; }
+.vce-module-columns #main-box-4 .main-box-title {
+  border-top-color: #B3C776;
+  color: #8BB242; }
+.vce-module-columns #main-box-5 .main-box-title {
+  border-top-color: #93A8D8;
+  color: #5D5271; }
+.vce-module-columns .main-box-title {
+  text-align: left;
+  padding: 22px;
+  padding-left: 35px; }
+
+.main-box-inside {
+  margin-top: -30px;
+  padding: 20px 15px; }
+
+/* Top Menu */
+#vce_top_navigation_menu li:not(:first-child) a {
+  border: 1px solid white;
+  padding: 1px 25px;
+  border-radius: 2px; }
+
+#main-box-1 .main-box-title {
+  color: #2783aa;
+  padding: 0;
+  margin: -20px -15px 20px -15px; }
+  #main-box-1 .main-box-title .wpb_wrapper {
+    padding: 20px 35px;
+    width: 100%;
+    margin-left: 0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    text-align: left; }
+#main-box-1 .wpb_wrapper .wpb_text_column:nth-child(2) {
+  margin-top: 90px; }
+
+/**
+ *	List - Latest
+ */
+.page-template-default .entry-header .entry-title-page {
+  text-align: center;
+  font-size: 25px; }
+
+#kboard-default-latest .cards-table {
+  border: none;
+  background-color: transparent;
+  table-layout: fixed;
+  display: table;
+  width: 100%; }
+  #kboard-default-latest .cards-table thead {
+    display: none; }
+  #kboard-default-latest .cards-table tr {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 15px 10px 10px;
+    background-color: rgba(255, 255, 255, 0.85); }
+  #kboard-default-latest .cards-table td {
+    border: none;
+    padding: 0px 8px;
+    vertical-align: middle; }
+  #kboard-default-latest .cards-table td:first-child {
+    width: 25%;
+    text-align: center; }
+  #kboard-default-latest .cards-table td:nth-child(3) {
+    width: 100%; }
+#kboard-default-latest .skydoctor-list-details {
+  font-size: 10px;
+  text-align: right; }
+#kboard-default-latest .kboard-default-cut-strings {
+  width: 130px;
+  color: #444444;
+  font-weight: bold;
+  -webkit-transition: color 320ms ease;
+  -moz-transition: color 320ms ease;
+  -ms-transition: color 320ms ease;
+  -o-transition: color 320ms ease;
+  transition: color 320ms ease; }
+  #kboard-default-latest .kboard-default-cut-strings:hover, #kboard-default-latest .kboard-default-cut-strings:focus, #kboard-default-latest .kboard-default-cut-strings:visited {
+    color: #2783aa; }
+
+.kboard-list-notice .kboard-list-uid {
+  color: #EE8778; }
+
+.kboard-list-uid {
+  font-weight: bold; }
+
+.kboard-list-title {
+  font-weight: bold; }
+  .kboard-list-title a {
+    color: #444444; }
+    .kboard-list-title a:hover {
+      color: #2783aa; }
+
+/**
+ *	List - Default
+ */
+#kboard-default-list .cards-table {
+  border: none;
+  background-color: transparent;
+  table-layout: fixed;
+  display: table;
+  width: 100%; }
+  #kboard-default-list .cards-table thead {
+    display: none; }
+  #kboard-default-list .cards-table tr {
+    display: block;
+    padding: 10px 15px 10px 10px;
+    background-color: #FBFBFB;
+    margin: 0 35px 20px 35px;
+    border-radius: 5px;
+    white-space: nowrap; }
+  #kboard-default-list .cards-table td {
+    border: none;
+    padding: 0 0 0 20px;
+    vertical-align: middle; }
+  #kboard-default-list .cards-table td:first-child {
+    text-align: center; }
+  #kboard-default-list .cards-table td:nth-child(2) {
+    text-align: center; }
+  #kboard-default-list .cards-table td:nth-child(4) {
+    width: 100%;
+    padding: 0 20px 0 0; }
+#kboard-default-list .skydoctor-list-category {
+  color: #2676BC;
+  font-weight: bold; }
+  #kboard-default-list .skydoctor-list-category a {
+    color: #2676BC; }
+#kboard-default-list .skydoctor-list-details {
+  font-size: 12px;
+  text-align: right; }
+#kboard-default-list .kboard-default-cut-strings {
+  width: 300px;
+  color: #444444;
+  font-weight: bold;
+  -webkit-transition: color 320ms ease;
+  -moz-transition: color 320ms ease;
+  -ms-transition: color 320ms ease;
+  -o-transition: color 320ms ease;
+  transition: color 320ms ease; }
+  #kboard-default-list .kboard-default-cut-strings:hover, #kboard-default-list .kboard-default-cut-strings:focus, #kboard-default-list .kboard-default-cut-strings:visited {
+    color: #2783aa; }
+#kboard-default-list .kboard-list-header {
+  float: left;
+  display: table;
+  padding-bottom: 15px;
+  width: 100%;
+  padding: 0 35px; }
+  #kboard-default-list .kboard-list-header .kboard-sort {
+    *float: left;
+    display: inline-block;
+    text-align: left; }
+    #kboard-default-list .kboard-list-header .kboard-sort select {
+      font-weight: bold;
+      display: inline;
+      margin: 0;
+      padding: 0;
+      width: auto;
+      height: 26px;
+      line-height: 26px;
+      font-size: 12px;
+      color: #444444;
+      border-radius: 0;
+      border: 1px solid #5D5D5D;
+      background: white;
+      vertical-align: middle;
+      box-shadow: none;
+      box-sizing: content-box;
+      text-indent: 0; }
+#kboard-default-list .kboard-search {
+  float: right;
+  padding-bottom: 15px;
+  text-align: center; }
+  #kboard-default-list .kboard-search select {
+    font-weight: bold;
+    display: inline;
+    margin: 0;
+    padding: 0 5px;
+    width: 120px;
+    min-width: 120px;
+    height: 26px;
+    font-size: 13px;
+    color: #444444;
+    border-radius: 0;
+    border: 1px solid #5D5D5D;
+    background: white;
+    line-height: 26px;
+    vertical-align: middle;
+    box-shadow: none;
+    box-sizing: content-box; }
+  #kboard-default-list .kboard-search input {
+    font-weight: bold;
+    display: inline;
+    margin: 0;
+    padding: 0 5px;
+    width: 120px;
+    min-width: 120px;
+    height: 26px;
+    font-size: 13px;
+    color: #444444;
+    border-radius: 6px;
+    border: 1px solid #5D5D5D;
+    background: white;
+    line-height: 26px;
+    vertical-align: middle;
+    box-shadow: none;
+    box-sizing: content-box; }
+  #kboard-default-list .kboard-search .skydoctor-search {
+    border: none;
+    min-width: 0;
+    width: 21px;
+    height: 21px;
+    background: transparent;
+    padding: 0;
+    margin-left: 6px; }
+    #kboard-default-list .kboard-search .skydoctor-search svg {
+      width: 21px;
+      height: 21px; }
+#kboard-default-list .skydoctor-list-footer {
+  display: flex;
+  justify-content: center;
+  padding: 0 35px; }
+#kboard-default-list .kboard-pagination {
+  margin: 0 auto; }
+  #kboard-default-list .kboard-pagination .kboard-pagination-pages {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    border: 0; }
+    #kboard-default-list .kboard-pagination .kboard-pagination-pages li {
+      display: inline-block;
+      *display: inline;
+      zoom: 1;
+      margin: 0;
+      padding: 0 1px;
+      background: none;
+      border: 0;
+      list-style: none; }
+      #kboard-default-list .kboard-pagination .kboard-pagination-pages li a {
+        border: 1px solid #1496ce;
+        color: #1496ce;
+        background-color: white;
+        padding: 6px 11px;
+        border-radius: 6px;
+        font-size: 13px;
+        height: 41.5px;
+        -webkit-transition: all 320ms ease;
+        -moz-transition: all 320ms ease;
+        -ms-transition: all 320ms ease;
+        -o-transition: all 320ms ease;
+        transition: all 320ms ease; }
+      #kboard-default-list .kboard-pagination .kboard-pagination-pages li:hover a, #kboard-default-list .kboard-pagination .kboard-pagination-pages li.active a {
+        border: 1px solid #1496ce;
+        color: white;
+        background-color: #1496ce;
+        padding: 6px 12px;
+        border-radius: 6px;
+        font-size: 16px;
+        height: 41.5px; }
+      #kboard-default-list .kboard-pagination .kboard-pagination-pages li:before, #kboard-default-list .kboard-pagination .kboard-pagination-pages li:after {
+        display: none; }
+#kboard-default-list .kboard-control {
+  margin-top: -8px; }
+#kboard-default-list .kboard-mobile-contents {
+  display: none;
+  font-size: 12px;
+  color: #999999; }
+  #kboard-default-list .kboard-mobile-contents .contents-item {
+    display: inline;
+    margin: 0;
+    padding: 0; }
+  #kboard-default-list .kboard-mobile-contents .contents-separator {
+    display: inline;
+    margin: 0;
+    padding: 0 2px;
+    color: #bebebe; }
+
+.entry-header {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); }
+  .entry-header h1 {
+    padding: 25px 0; }
+
+.post-34 header {
+  border-top: 2px solid #F1AA3D; }
+
+.post-35 header {
+  border-top: 2px solid #5374C0; }
+
+.post-36 header {
+  border-top: 2px solid #B3C776; }
+
+.post-37 header {
+  border-top: 2px solid #93A8D8; }
+
+.post-161 header {
+  border-top: 2px solid #1496CE; }
+
+/**
+ *	Category
+ */
+.sidebar .widget.widget_categories {
+  line-height: 0; }
+
+.widget_categories li:first-child:before {
+  background-color: #5BC9F0; }
+.widget_categories li:first-child .count {
+  background-color: #5BC9F0; }
+.widget_categories li:nth-child(2):before {
+  background-color: #1CA8A9; }
+.widget_categories li:nth-child(2) .count {
+  background-color: #1CA8A9; }
+.widget_categories li:nth-child(3):before {
+  background-color: #19A766; }
+.widget_categories li:nth-child(3) .count {
+  background-color: #19A766; }
+.widget_categories li:nth-child(4):before {
+  background-color: #792987; }
+.widget_categories li:nth-child(4) .count {
+  background-color: #792987; }
+.widget_categories li:nth-child(5):before {
+  background-color: #5C328F; }
+.widget_categories li:nth-child(5) .count {
+  background-color: #5C328F; }
+.widget_categories li:nth-child(6):before {
+  background-color: #2575BB; }
+.widget_categories li:nth-child(6) .count {
+  background-color: #2575BB; }
+.widget_categories li:nth-child(7):before {
+  background-color: #5BC9F0; }
+.widget_categories li:nth-child(7) .count {
+  background-color: #5BC9F0; }
+.widget_categories li:nth-child(8):before {
+  background-color: #1CA8A9; }
+.widget_categories li:nth-child(8) .count {
+  background-color: #1CA8A9; }
+.widget_categories li:nth-child(9):before {
+  background-color: #19A766; }
+.widget_categories li:nth-child(9) .count {
+  background-color: #19A766; }
+.widget_categories li:nth-child(10):before {
+  background-color: #792987; }
+.widget_categories li:nth-child(10) .count {
+  background-color: #792987; }
+.widget_categories li:nth-child(11):before {
+  background-color: #5C328F; }
+.widget_categories li:nth-child(11) .count {
+  background-color: #5C328F; }
+.widget_categories li:nth-child(12):before {
+  background-color: #2575BB; }
+.widget_categories li:nth-child(12) .count {
+  background-color: #2575BB; }
+
+/**
+ *	Document
+ */
+#kboard-document {
+  padding: 0 30px; }
+
+/**
+ *	Editor
+ */
+#kboard-default-editor {
+  padding: 0 30px; }
+
+#post-34 #kboard-select-category1 option:nth-of-type(2) {
+  display: none; }
+#post-34 #kboard-select-category1.show_notice_tag_admin_only option:nth-of-type(2) {
+  display: initial; }
+
+/**
+ *	Contact Form
+ */
+#simple-contact-form form {
+  margin: 0 auto; }
+
+p.scf_error, p.scf_spam {
+  text-align: center; }
+
+/**
+ *	Variables
+ */
+/**
+ *	Smartphones
+ */
+@media screen and (max-width: 600px) {
+  /**
+   *	Main
+   */
+  #kboard-default-latest .cards-table td {
+    padding: 0; }
+    #kboard-default-latest .cards-table td:first-child {
+      font-size: 10px; }
+    #kboard-default-latest .cards-table td:nth-child(2) {
+      padding-left: 10px; }
+  #kboard-default-latest .skydoctor-list-details {
+    font-size: 7px; }
+    #kboard-default-latest .skydoctor-list-details div {
+      line-height: 13px; }
+      #kboard-default-latest .skydoctor-list-details div span {
+        display: block; }
+      #kboard-default-latest .skydoctor-list-details div span:nth-child(2) {
+        display: none; }
+
+  .kboard-default-cut-strings {
+    width: 110px;
+    font-size: 12px; }
+
+  #main-box-1 .main-box-title {
+    margin: -10px -15px 20px -15px; }
+
+  /**
+   *	List Default
+   */
+  #kboard-default-list .kboard-category.category-mobile {
+    display: block; }
+  #kboard-default-list .kboard-category.category-pc {
+    display: none; }
+  #kboard-default-list .kboard-pagination .kboard-pagination-pages li {
+    display: none; }
+    #kboard-default-list .kboard-pagination .kboard-pagination-pages li.first-page, #kboard-default-list .kboard-pagination .kboard-pagination-pages li.last-page, #kboard-default-list .kboard-pagination .kboard-pagination-pages li.prev-page, #kboard-default-list .kboard-pagination .kboard-pagination-pages li.next-page, #kboard-default-list .kboard-pagination .kboard-pagination-pages li.active {
+      display: inline-block; }
+    #kboard-default-list .kboard-pagination .kboard-pagination-pages li.prev-page a, #kboard-default-list .kboard-pagination .kboard-pagination-pages li.next-page a {
+      padding: 6px 10px; }
+    #kboard-default-list .kboard-pagination .kboard-pagination-pages li.active a, #kboard-default-list .kboard-pagination .kboard-pagination-pages li:hover a {
+      font-size: 11px;
+      padding: 6px 10px; }
+    #kboard-default-list .kboard-pagination .kboard-pagination-pages li a {
+      padding: 6px 10px;
+      font-size: 11px; }
+  #kboard-default-list .kboard-default-button-small {
+    font-size: 11px;
+    padding: 5px 15px; }
+  #kboard-default-list .cards-table tr {
+    margin: 0; }
+    #kboard-default-list .cards-table tr.kboard-list-notice td:nth-child(2) {
+      display: none; }
+    #kboard-default-list .cards-table tr.kboard-list-notice .kboard-default-cut-strings {
+      width: 155px; }
+    #kboard-default-list .cards-table tr:not(.kboard-list-notice) td:first-child {
+      display: none; }
+    #kboard-default-list .cards-table tr:not(.kboard-list-notice) td:nth-child(2) {
+      font-size: 9px; }
+  #kboard-default-list .cards-table td {
+    font-size: 10px;
+    padding: 0; }
+    #kboard-default-list .cards-table td.kboard-list-title {
+      padding-left: 12px; }
+    #kboard-default-list .cards-table td.skydoctor-list-details {
+      font-size: 7px;
+      padding: 0; }
+      #kboard-default-list .cards-table td.skydoctor-list-details div {
+        line-height: 13px; }
+        #kboard-default-list .cards-table td.skydoctor-list-details div span {
+          display: block; }
+        #kboard-default-list .cards-table td.skydoctor-list-details div span:nth-child(2) {
+          display: none; }
+  #kboard-default-list .kboard-default-cut-strings {
+    width: 115px; }
+  #kboard-default-list .kboard-list-header {
+    padding: 0; }
+    #kboard-default-list .kboard-list-header .kboard-search, #kboard-default-list .kboard-list-header .kboard-sort {
+      width: 100%; }
+      #kboard-default-list .kboard-list-header .kboard-search select, #kboard-default-list .kboard-list-header .kboard-sort select {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        height: 42px;
+        border-radius: 5px;
+        font-weight: normal;
+        padding: 0;
+        margin-bottom: 10px; }
+      #kboard-default-list .kboard-list-header .kboard-search input, #kboard-default-list .kboard-list-header .kboard-sort input {
+        min-width: 190px; }
+  #kboard-default-list .skydoctor-list-footer {
+    padding: 0; }
+
+  .vce-page .entry-title-page {
+    padding: 25px 0;
+    margin: 0;
+    font-size: 22px; }
+
+  /**
+   *	Board Contents
+   */
+  #kboard-document {
+    padding: 0; }
+    #kboard-document a.kboard-default-button-small {
+      padding: 5px 13px; }
+
+  .entry-content #kboard-default-editor {
+    padding: 0; }
+    .entry-content #kboard-default-editor select {
+      width: 90%; }
+    .entry-content #kboard-default-editor a.kboard-default-button-small, .entry-content #kboard-default-editor button.kboard-default-button-small {
+      padding: 5px 6px; }
+    .entry-content #kboard-default-editor .kboard-attr-row .attr-value {
+      margin-left: 130px; }
+    .entry-content #kboard-default-editor input[type=file] {
+      width: 100%; } }
+a.kboard-default-button-small, input.kboard-default-button-small, button.kboard-default-button-small {
+  font-weight: bold;
+  border: 1px solid #1496ce;
+  position: relative;
+  border-radius: 6px;
+  display: inline-block;
+  zoom: 1;
+  margin: 0;
+  padding: 5px 33px;
+  height: 28px;
+  line-height: 28px;
+  font-size: 13px;
+  letter-spacing: normal;
+  color: #1496ce;
+  background: white;
+  text-decoration: none !important;
+  cursor: pointer;
+  vertical-align: middle;
+  text-shadow: none;
+  box-shadow: none;
+  transition-duration: 0.3s;
+  box-sizing: content-box;
+  -webkit-transition: all 150ms ease;
+  -moz-transition: all 150ms ease;
+  -ms-transition: all 150ms ease;
+  -o-transition: all 150ms ease;
+  transition: all 150ms ease; }
+
+a.kboard-default-button-small:hover, a.kboard-default-button-small:focus, a.kboard-default-button-small:active {
+  opacity: 0.7;
+  background: #1496ce;
+  color: #FBFCFC; }
+
+input.kboard-default-button-small:hover, input.kboard-default-button-small:focus, input.kboard-default-button-small:active {
+  opacity: 0.7;
+  background: #1496ce;
+  color: #FBFCFC; }
+
+button.kboard-default-button-small:hover, button.kboard-default-button-small:focus, button.kboard-default-button-small:active {
+  opacity: 0.7;
+  background: #1496ce;
+  color: #FBFCFC; }
+
+.kboard-default-poweredby {
+  float: left;
+  padding-bottom: 15px;
+  width: 100%;
+  font-size: 13px; }
+
+.kboard-default-new-notify {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  padding: 2px 2px;
+  line-height: 10px;
+  font-size: 10px;
+  color: white;
+  background-color: #f61b5d;
+  font-weight: normal; }
+
+.kboard-default-cut-strings {
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-wrap: normal; }
+
+#kboard-default-editor {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  margin: 0;
+  width: 100%; }
+  #kboard-default-editor select {
+    display: inline;
+    margin: 0;
+    padding: 0 5px;
+    font-size: 13px;
+    width: 30%;
+    height: 28px;
+    line-height: 28px;
+    color: #666666;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #dcdcdc;
+    box-shadow: none;
+    background-color: transparent;
+    box-sizing: content-box;
+    vertical-align: top;
+    text-indent: 0; }
+  #kboard-default-editor input[type=text], #kboard-default-editor input[type=email], #kboard-default-editor input[type=number], #kboard-default-editor input[type=date], #kboard-default-editor input[type=password] {
+    display: inline;
+    margin: 0;
+    padding: 0 5px;
+    width: 30%;
+    height: 28px;
+    line-height: 28px;
+    font-size: 13px;
+    color: #666666;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #dcdcdc;
+    box-shadow: none;
+    background-color: transparent;
+    box-sizing: content-box;
+    vertical-align: top; }
+  #kboard-default-editor select:hover {
+    border-bottom: 1px solid #9e9e9e; }
+  #kboard-default-editor input[type=text]:hover, #kboard-default-editor input[type=email]:hover, #kboard-default-editor input[type=number]:hover, #kboard-default-editor input[type=date]:hover, #kboard-default-editor input[type=password]:hover {
+    border-bottom: 1px solid #9e9e9e; }
+  #kboard-default-editor select:focus {
+    border-bottom: 2px solid #9e9e9e; }
+  #kboard-default-editor input[type=text]:focus, #kboard-default-editor input[type=email]:focus, #kboard-default-editor input[type=number]:focus, #kboard-default-editor input[type=date]:focus, #kboard-default-editor input[type=password]:focus {
+    border-bottom: 2px solid #9e9e9e; }
+  #kboard-default-editor input[type=file] {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    font-size: 12px;
+    color: #666666;
+    border-radius: 0;
+    border: 0;
+    box-shadow: none;
+    background-color: transparent; }
+  #kboard-default-editor .kboard-attr-title input {
+    width: 70%; }
+  #kboard-default-editor .kboard-attr-row {
+    float: left;
+    padding: 5px 0;
+    width: 100%;
+    background-color: white; }
+    #kboard-default-editor .kboard-attr-row .attr-name {
+      display: inline;
+      float: left;
+      margin: 0;
+      padding: 0 10px 0 20px;
+      width: 120px;
+      line-height: 30px;
+      color: #545861;
+      font-size: 13px;
+      font-weight: bold; }
+      #kboard-default-editor .kboard-attr-row .attr-name img {
+        display: inline;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        max-width: 100%;
+        vertical-align: middle; }
+    #kboard-default-editor .kboard-attr-row .attr-value {
+      margin-left: 150px;
+      line-height: 30px;
+      font-size: 13px; }
+      #kboard-default-editor .kboard-attr-row .attr-value .attr-value-option {
+        display: inline;
+        padding-right: 20px;
+        width: auto;
+        cursor: pointer; }
+        #kboard-default-editor .kboard-attr-row .attr-value .attr-value-option input[type=checkbox] {
+          cursor: pointer; }
+      #kboard-default-editor .kboard-attr-row .attr-value .description {
+        color: #666666; }
+  #kboard-default-editor .kboard-confirm-row {
+    padding: 100px 0; }
+  #kboard-default-editor .kboard-content {
+    float: left;
+    padding: 9px 0;
+    width: 100%;
+    text-align: center;
+    background-color: white; }
+    #kboard-default-editor .kboard-content textarea {
+      display: inline;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+      height: 250px;
+      font-size: 13px;
+      box-sizing: border-box; }
+  #kboard-default-editor .kboard-control {
+    float: left;
+    padding: 15px 0;
+    width: 100%; }
+    #kboard-default-editor .kboard-control .left {
+      position: static;
+      float: left; }
+    #kboard-default-editor .kboard-control .right {
+      position: static;
+      float: right;
+      width: 50%;
+      text-align: right; }
+
+#kboard-default-document {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  margin: 0;
+  width: 100%; }
+  #kboard-default-document .kboard-document-wrap {
+    float: left;
+    width: 100%;
+    background-color: white; }
+  #kboard-default-document .kboard-title {
+    float: left;
+    width: 100%; }
+    #kboard-default-document .kboard-title h1 {
+      margin: 0;
+      padding: 12px 22px;
+      color: #545861;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 30px;
+      text-align: left; }
+  #kboard-default-document .kboard-detail {
+    clear: both;
+    float: left;
+    width: 100%;
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+    background-color: #f9f9f9;
+    font-size: 13px; }
+    #kboard-default-document .kboard-detail .detail-attr {
+      display: inline-block;
+      *display: inline;
+      zoom: 1;
+      float: left;
+      margin: 0;
+      padding: 12px 35px 12px 22px; }
+      #kboard-default-document .kboard-detail .detail-attr .detail-name {
+        float: left;
+        font-weight: bold;
+        color: #545861;
+        text-align: right; }
+      #kboard-default-document .kboard-detail .detail-attr .detail-value {
+        float: left;
+        padding-left: 20px;
+        color: #545861; }
+        #kboard-default-document .kboard-detail .detail-attr .detail-value img {
+          vertical-align: middle; }
+  #kboard-default-document .kboard-content {
+    clear: both;
+    float: left;
+    width: 100%;
+    min-height: 200px; }
+    #kboard-default-document .kboard-content .content-view {
+      margin: 0;
+      padding: 22px;
+      word-break: break-all; }
+      #kboard-default-document .kboard-content .content-view img {
+        display: inline;
+        margin: 0;
+        width: auto;
+        height: auto;
+        vertical-align: middle;
+        max-width: 100%; }
+      #kboard-default-document .kboard-content .content-view p {
+        margin: 0 0 0.75em; }
+        #kboard-default-document .kboard-content .content-view p:last-child {
+          margin: 0; }
+      #kboard-default-document .kboard-content .content-view .thumbnail-area {
+        text-align: center; }
+  #kboard-default-document .kboard-document-action {
+    padding: 0 22px 5px 22px;
+    overflow: hidden;
+    line-height: 1; }
+    #kboard-default-document .kboard-document-action .left {
+      position: static;
+      float: left; }
+    #kboard-default-document .kboard-document-action .right {
+      position: static;
+      float: right;
+      text-align: right; }
+  #kboard-default-document .kboard-attach {
+    clear: both;
+    margin: 0 22px;
+    padding: 10px 0 5px 0;
+    font-size: 12px;
+    overflow: hidden;
+    line-height: 1;
+    border-top: 1px dashed #ededed; }
+  #kboard-default-document .kboard-button-action {
+    margin: 0 0 5px 0;
+    padding: 4px 5px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 12px;
+    text-align: left;
+    border: 1px solid #ededed;
+    background: none;
+    background-color: transparent;
+    border-radius: 2px;
+    letter-spacing: normal;
+    cursor: pointer;
+    vertical-align: middle;
+    text-shadow: none;
+    box-shadow: none; }
+    #kboard-default-document .kboard-button-action span {
+      position: static;
+      display: inline;
+      margin: 0;
+      padding: 0;
+      font-size: 12px; }
+  #kboard-default-document .kboard-button-like {
+    color: #ff5959; }
+  #kboard-default-document .kboard-button-unlike {
+    color: #3d62aa; }
+  #kboard-default-document .kboard-button-print, #kboard-default-document .kboard-button-download {
+    color: gray; }
+  #kboard-default-document .kboard-comments-area {
+    float: left;
+    width: 100%; }
+  #kboard-default-document .kboard-document-navi {
+    float: left;
+    padding-top: 15px;
+    width: 100%; }
+    #kboard-default-document .kboard-document-navi a {
+      display: block;
+      text-decoration: none;
+      border: 0;
+      font-size: 13px;
+      line-height: 20px;
+      box-shadow: none;
+      color: #545861;
+      transition-duration: .3s; }
+    #kboard-default-document .kboard-document-navi .navi-document-title {
+      display: block; }
+    #kboard-default-document .kboard-document-navi .navi-arrow {
+      position: absolute;
+      display: block; }
+    #kboard-default-document .kboard-document-navi .kboard-prev-document {
+      position: relative;
+      float: left;
+      width: 45%; }
+      #kboard-default-document .kboard-document-navi .kboard-prev-document .navi-document-title {
+        padding-left: 15px; }
+      #kboard-default-document .kboard-document-navi .kboard-prev-document .navi-arrow {
+        left: 0;
+        top: 0; }
+      #kboard-default-document .kboard-document-navi .kboard-prev-document:hover a {
+        color: black; }
+    #kboard-default-document .kboard-document-navi .kboard-next-document {
+      position: relative;
+      float: right;
+      width: 45%;
+      text-align: right; }
+      #kboard-default-document .kboard-document-navi .kboard-next-document .navi-document-title {
+        padding-right: 15px; }
+      #kboard-default-document .kboard-document-navi .kboard-next-document .navi-arrow {
+        right: 0;
+        top: 0; }
+      #kboard-default-document .kboard-document-navi .kboard-next-document:hover a {
+        color: black; }
+  #kboard-default-document .kboard-control {
+    float: left;
+    padding: 15px 0;
+    width: 100%; }
+    #kboard-default-document .kboard-control .left {
+      position: static;
+      float: left; }
+    #kboard-default-document .kboard-control .right {
+      position: static;
+      float: right;
+      text-align: right; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,181 @@
+@import 'base/variables';
+
+/**
+ *	Smartphones
+ */
+@media screen and (max-width: 600px) {
+
+	/**
+	 *	Main
+	 */
+	#kboard-default-latest {
+		.cards-table {
+			td {
+				padding: 0;
+				&:first-child {
+					font-size: 10px;
+				}
+				&:nth-child(2) {
+					padding-left: 10px;
+				}
+			}
+		}
+		.skydoctor-list-details {
+			div {
+				line-height: 13px;
+				span {
+					display: block;
+				}
+				span:nth-child(2) {
+					display: none;
+				}
+			}
+			font-size: 7px;
+		}
+	}
+	.kboard-default-cut-strings {
+		width: 110px;
+		font-size: 12px;
+	}
+	#main-box-1 {
+		.main-box-title {
+			margin: -10px -15px 20px -15px;
+		}
+	}
+
+	/**
+	 *	List Default
+	 */
+	#kboard-default-list {
+		.kboard-category {
+			&.category-mobile {
+				display: block;
+			}
+			&.category-pc {
+				display: none;
+			}
+		}
+		.kboard-pagination .kboard-pagination-pages li {
+			display: none;
+			&.first-page, &.last-page, &.prev-page, &.next-page, &.active {
+				display: inline-block;
+			}
+			&.prev-page a, &.next-page a {
+				padding: 6px 10px;
+			}
+			&.active,
+			&:hover {
+				a {
+					font-size: 11px;
+					padding: 6px 10px;
+				}
+			}
+			a {
+				padding: 6px 10px;
+				font-size: 11px;
+			}
+		}
+		.kboard-default-button-small {
+			font-size: 11px;
+			padding: 5px 15px;
+		}
+		.cards-table {
+			tr {
+				margin: 0;
+				&.kboard-list-notice {
+					td:nth-child(2) {
+						display: none;
+					}
+					.kboard-default-cut-strings {
+						width: 155px;
+					}
+				}
+				&:not(.kboard-list-notice) {
+					td:first-child {
+						display: none;
+					}
+					td:nth-child(2) {
+						font-size: 9px;
+					}
+				}
+			}
+			td {
+				font-size: 10px;
+				padding: 0;
+				&.kboard-list-title {
+					padding-left: 12px;
+				}
+				&.skydoctor-list-details {
+					div {
+						line-height: 13px;
+						span {
+							display: block;
+						}
+						span:nth-child(2) {
+							display: none;
+						}
+					}
+					font-size: 7px;
+					padding: 0;
+				}
+			}
+		}
+		.kboard-default-cut-strings {
+			width: 115px;
+		}
+		.kboard-list-header {
+			padding: 0;
+			.kboard-search, .kboard-sort {
+				width: 100%;
+				select {
+					width: 100%;
+					background: rgba(255, 255, 255, .2);
+					border: 1px solid rgba(0, 0, 0, .1);
+					height: 42px;
+					border-radius: 5px;
+					font-weight: normal;
+					padding: 0;
+					margin-bottom: 10px;
+				}
+				input {
+					min-width: 190px;
+				}
+			}
+		}
+		.skydoctor-list-footer {
+			padding: 0;
+		}
+	}
+	.vce-page .entry-title-page {
+		padding: 25px 0;
+		margin: 0;
+		font-size: 22px;
+	}
+
+	/**
+	 *	Board Contents
+	 */
+	#kboard-document {
+		padding: 0;
+		a.kboard-default-button-small {
+			padding: 5px 13px;
+		}
+	}
+	.entry-content #kboard-default-editor {
+		padding: 0;
+		select {
+			width: 90%;
+		}
+		a, button {
+			&.kboard-default-button-small {
+				padding: 5px 6px;
+			}
+		}
+		.kboard-attr-row .attr-value {
+			margin-left: 130px;
+		}
+		input[type=file] {
+			width: 100%;
+		}
+	}
+}

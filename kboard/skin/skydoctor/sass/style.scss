@@ -1,0 +1,450 @@
+@charset "utf-8";
+
+/**
+ *	Import
+ */
+@import 'base/variables';
+@import 'skydoctor';
+@import 'skydoctor-responsive';
+
+a.kboard-default-button-small, input.kboard-default-button-small, button.kboard-default-button-small {
+	font-weight: bold;
+	border: 1px solid $light-blue;
+	position: relative;
+	border-radius: 6px;
+	display: inline-block;
+	zoom: 1;
+	margin: 0;
+	padding: 5px 33px;
+	height: 28px;
+	line-height: 28px;
+	font-size: 13px;
+	letter-spacing: normal;
+	color: $light-blue;
+	background: white;
+	text-decoration: none !important;
+	cursor: pointer;
+	vertical-align: middle;
+	text-shadow: none;
+	box-shadow: none;
+	transition-duration: 0.3s;
+	box-sizing: content-box;
+	@include animate( all, 150ms );
+}
+
+a.kboard-default-button-small {
+	&:hover, &:focus, &:active {
+		opacity: 0.7;
+		background: $light-blue;
+		color: $base-white;
+	}
+}
+
+input.kboard-default-button-small {
+	&:hover, &:focus, &:active {
+		opacity: 0.7;
+		background: $light-blue;
+		color: $base-white;
+	}
+}
+
+button.kboard-default-button-small {
+	&:hover, &:focus, &:active {
+		opacity: 0.7;
+		background: $light-blue;
+		color: $base-white;
+	}
+}
+
+.kboard-default-poweredby {
+	float: left;
+	padding-bottom: 15px;
+	width: 100%;
+	font-size: 13px;
+}
+
+.kboard-default-new-notify {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	padding: 2px 2px;
+	line-height: 10px;
+	font-size: 10px;
+	color: white;
+	background-color: #f61b5d;
+	font-weight: normal;
+}
+
+.kboard-default-cut-strings {
+	width: auto;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	word-wrap: normal;
+}
+
+#kboard-default-editor {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	margin: 0;
+	width: 100%;
+	select {
+		display: inline;
+		margin: 0;
+		padding: 0 5px;
+		font-size: 13px;
+		width: 30%;
+		height: 28px;
+		line-height: 28px;
+		color: #666666;
+		border-radius: 0;
+		border: 0;
+		border-bottom: 1px solid #dcdcdc;
+		box-shadow: none;
+		background-color: transparent;
+		box-sizing: content-box;
+		vertical-align: top;
+		text-indent: 0;
+	}
+	input {
+		&[type=text], &[type=email], &[type=number], &[type=date], &[type=password] {
+			display: inline;
+			margin: 0;
+			padding: 0 5px;
+			width: 30%;
+			height: 28px;
+			line-height: 28px;
+			font-size: 13px;
+			color: #666666;
+			border-radius: 0;
+			border: 0;
+			border-bottom: 1px solid #dcdcdc;
+			box-shadow: none;
+			background-color: transparent;
+			box-sizing: content-box;
+			vertical-align: top;
+		}
+	}
+	select:hover {
+		border-bottom: 1px solid #9e9e9e;
+	}
+	input {
+		&[type=text]:hover, &[type=email]:hover, &[type=number]:hover, &[type=date]:hover, &[type=password]:hover {
+			border-bottom: 1px solid #9e9e9e;
+		}
+	}
+	select:focus {
+		border-bottom: 2px solid #9e9e9e;
+	}
+	input {
+		&[type=text]:focus, &[type=email]:focus, &[type=number]:focus, &[type=date]:focus, &[type=password]:focus {
+			border-bottom: 2px solid #9e9e9e;
+		}
+		&[type=file] {
+			display: inline;
+			margin: 0;
+			padding: 0;
+			width: 30%;
+			font-size: 12px;
+			color: #666666;
+			border-radius: 0;
+			border: 0;
+			box-shadow: none;
+			background-color: transparent;
+		}
+	}
+	.kboard-attr-title input {
+		width: 70%;
+	}
+	.kboard-attr-row {
+		float: left;
+		padding: 5px 0;
+		width: 100%;
+		background-color: white;
+		.attr-name {
+			display: inline;
+			float: left;
+			margin: 0;
+			padding: 0 10px 0 20px;
+			width: 120px;
+			line-height: 30px;
+			color: #545861;
+			font-size: 13px;
+			font-weight: bold;
+			img {
+				display: inline;
+				margin: 0;
+				padding: 0;
+				width: auto;
+				max-width: 100%;
+				vertical-align: middle;
+			}
+		}
+		.attr-value {
+			margin-left: 150px;
+			line-height: 30px;
+			font-size: 13px;
+			.attr-value-option {
+				display: inline;
+				padding-right: 20px;
+				width: auto;
+				cursor: pointer;
+				input[type=checkbox] {
+					cursor: pointer;
+				}
+			}
+			.description {
+				color: #666666;
+			}
+		}
+	}
+	.kboard-confirm-row {
+		padding: 100px 0;
+	}
+	.kboard-content {
+		float: left;
+		padding: 9px 0;
+		width: 100%;
+		text-align: center;
+		background-color: white;
+		textarea {
+			display: inline;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			min-width: 100%;
+			max-width: 100%;
+			height: 250px;
+			font-size: 13px;
+			box-sizing: border-box;
+		}
+	}
+	.kboard-control {
+		float: left;
+		padding: 15px 0;
+		width: 100%;
+		.left {
+			position: static;
+			float: left;
+		}
+		.right {
+			position: static;
+			float: right;
+			width: 50%;
+			text-align: right;
+		}
+	}
+}
+
+#kboard-default-document {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	margin: 0;
+	width: 100%;
+	.kboard-document-wrap {
+		float: left;
+		width: 100%;
+		background-color: white;
+	}
+	.kboard-title {
+		float: left;
+		width: 100%;
+		h1 {
+			margin: 0;
+			padding: 12px 22px;
+			color: #545861;
+			font-weight: bold;
+			font-size: 22px;
+			line-height: 30px;
+			text-align: left;
+		}
+	}
+	.kboard-detail {
+		clear: both;
+		float: left;
+		width: 100%;
+		border-top: 1px solid #f1f1f1;
+		border-bottom: 1px solid #f1f1f1;
+		background-color: #f9f9f9;
+		font-size: 13px;
+		.detail-attr {
+			display: inline-block;
+			*display: inline;
+			zoom: 1;
+			float: left;
+			margin: 0;
+			padding: 12px 35px 12px 22px;
+			.detail-name {
+				float: left;
+				font-weight: bold;
+				color: #545861;
+				text-align: right;
+			}
+			.detail-value {
+				float: left;
+				padding-left: 20px;
+				color: #545861;
+				img {
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+	.kboard-content {
+		clear: both;
+		float: left;
+		width: 100%;
+		min-height: 200px;
+		.content-view {
+			margin: 0;
+			padding: 22px;
+			word-break: break-all;
+			img {
+				display: inline;
+				margin: 0;
+				width: auto;
+				height: auto;
+				vertical-align: middle;
+				max-width: 100%;
+			}
+			p {
+				margin: 0 0 0.75em;
+				&:last-child {
+					margin: 0;
+				}
+			}
+			.thumbnail-area {
+				text-align: center;
+			}
+		}
+	}
+	.kboard-document-action {
+		padding: 0 22px 5px 22px;
+		overflow: hidden;
+		line-height: 1;
+		.left {
+			position: static;
+			float: left;
+		}
+		.right {
+			position: static;
+			float: right;
+			text-align: right;
+		}
+	}
+	.kboard-attach {
+		clear: both;
+		margin: 0 22px;
+		padding: 10px 0 5px 0;
+		font-size: 12px;
+		overflow: hidden;
+		line-height: 1;
+		border-top: 1px dashed #ededed;
+	}
+	.kboard-button-action {
+		margin: 0 0 5px 0;
+		padding: 4px 5px;
+		font-size: 12px;
+		font-weight: normal;
+		line-height: 12px;
+		text-align: left;
+		border: 1px solid #ededed;
+		background: none;
+		background-color: transparent;
+		border-radius: 2px;
+		letter-spacing: normal;
+		cursor: pointer;
+		vertical-align: middle;
+		text-shadow: none;
+		box-shadow: none;
+		span {
+			position: static;
+			display: inline;
+			margin: 0;
+			padding: 0;
+			font-size: 12px;
+		}
+	}
+	.kboard-button-like {
+		color: #ff5959;
+	}
+	.kboard-button-unlike {
+		color: #3d62aa;
+	}
+	.kboard-button-print, .kboard-button-download {
+		color: gray;
+	}
+	.kboard-comments-area {
+		float: left;
+		width: 100%;
+	}
+	.kboard-document-navi {
+		float: left;
+		padding-top: 15px;
+		width: 100%;
+		a {
+			display: block;
+			text-decoration: none;
+			border: 0;
+			font-size: 13px;
+			line-height: 20px;
+			box-shadow: none;
+			color: #545861;
+			transition-duration: .3s;
+		}
+		.navi-document-title {
+			display: block;
+		}
+		.navi-arrow {
+			position: absolute;
+			display: block;
+		}
+		.kboard-prev-document {
+			position: relative;
+			float: left;
+			width: 45%;
+			.navi-document-title {
+				padding-left: 15px;
+			}
+			.navi-arrow {
+				left: 0;
+				top: 0;
+			}
+			&:hover a {
+				color: black;
+			}
+		}
+		.kboard-next-document {
+			position: relative;
+			float: right;
+			width: 45%;
+			text-align: right;
+			.navi-document-title {
+				padding-right: 15px;
+			}
+			.navi-arrow {
+				right: 0;
+				top: 0;
+			}
+			&:hover a {
+				color: black;
+			}
+		}
+	}
+	.kboard-control {
+		float: left;
+		padding: 15px 0;
+		width: 100%;
+		.left {
+			position: static;
+			float: left;
+		}
+		.right {
+			position: static;
+			float: right;
+			text-align: right;
+		}
+	}
+}
