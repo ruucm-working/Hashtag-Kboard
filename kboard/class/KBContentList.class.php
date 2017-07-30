@@ -171,9 +171,6 @@ class KBContentList {
 	public function getList($keyword='', $search='title', $with_notice=false, $tag=''){
 		global $wpdb;
 
-		logw('$keyword : ' . $keyword);
-		logw('$tag(befoer search) : ' . $tag);
-		
 		if($this->stop){
 			$this->total = 0;
 			$this->resource = array();
@@ -218,18 +215,16 @@ class KBContentList {
 		$search = esc_sql($search);
 		$keyword = esc_sql($keyword);
 		$tag = esc_sql($tag);
-		// $tag = $tag . ' ';
-		logw('$tag(befoer search) : ' . $tag);
+		$tag1 = $tag . ' ';
+		$tag2 = $tag . '/n';
 
 		if(!$with_notice) $where[] = "`notice`=''";
 		if(!$keyword) $where[] = "`parent_uid`='0'";
 		if($keyword && $search) $where[] = "`$search` LIKE '%$keyword%'";
 		else if($keyword && !$search) $where[] = "(`title` LIKE '%$keyword%' OR `content` LIKE '%$keyword%')";
 
-		if($tag) $where[] = "(`title` LIKE '%$tag%' OR `content` LIKE '%$tag%')";
+		if($tag) $where[] = "(`content` LIKE '%$tag%' OR `content` LIKE '%$tag1%' OR `content` LIKE '%$tag2%')";
 
-		logw('$where[] : ');
-		logw_a($where);
 		if($this->category1){
 			$category1 = esc_sql($this->category1);
 			$where[] = "`category1`='$category1'";

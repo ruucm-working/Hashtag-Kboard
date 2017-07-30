@@ -489,13 +489,11 @@ function kboard_keyword(){
  * @return string
  */
 function kboard_tag(){
-	logw('kboard_tag');
 	static $tag;
 	if($tag === null){
 		$_GET['tag'] = isset($_GET['tag'])?sanitize_text_field($_GET['tag']):'';
 		$tag = $_GET['tag'];
 	}
-	logw('tag : ' . $tag);
 	return $tag;
 }
 

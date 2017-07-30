@@ -126,13 +126,6 @@ class KBoardBuilder {
 				$list->stop = true;
 			}
 		}
-		// logw('kboard_keyword() : ' . kboard_keyword());
-		// logw('kboard_target() : ' . kboard_target());
-
-
-		logw('$kboard_keyword : ' . kboard_keyword());
-		logw('$kboard_tag : ' . kboard_tag());
-
 
 		$list->rpp($this->rpp)->page(kboard_pageid())->getList(kboard_keyword(), kboard_target(), false, kboard_tag());
 
