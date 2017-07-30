@@ -3,12 +3,12 @@
  * @package Hashtag
  */
 /*
-Plugin Name: Hashtag
-Plugin URI: http://takien.com/plugins/hashtag
+Plugin Name: Hashtag for Kboard
+Plugin URI: 
 Description: Converts hashtag strings into clickable link in WordPress. If clicked it will search contents contain same hashtag.
 Version: 0.5
-Author: takien
-Author URI: http://takien.com
+Author: takien, ruucm
+Author URI: 
 License: GPLv2 or later
 */
 
@@ -33,6 +33,7 @@ if(!class_exists('HashtagPluginOption')) {
 	class HashtagPluginOption extends EasyOptions {
 		function init() {
 			add_filter( 'kboard_insert_data', array(&$this,'hashtag_replace') );
+			add_filter( 'kboard_update_data', array(&$this,'hashtag_replace') );
 			add_filter( 'kboard_content', array(&$this,'hashtag_regex_replace') );
 			add_action( 'admin_enqueue_scripts', array(&$this,'hastag_plugin_enqueue_script' ) );
 			add_action( 'wp_head', array(&$this,'hashtag_plugin_script'));
@@ -53,7 +54,7 @@ if(!class_exists('HashtagPluginOption')) {
 		}
 		
 		function hashtag_regex_replace( $content ) {
-			$content = $this->hashtag_first_line($content);
+			$content = $this->hashtag_replace_first_line($content);
 			$regular   = easy_options('regular_search','hashtag-plugin-option');
 			$class     = easy_options('link_class','hashtag-plugin-option');
 			$hash      = $regular ? '' : '%23';
@@ -63,7 +64,7 @@ if(!class_exists('HashtagPluginOption')) {
 			return $content;
 		}
 
-		function hashtag_first_line( $string ) {
+		function hashtag_replace_first_line( $string ) {
 			$htag = "#";
 			$regular   = easy_options('regular_search','hashtag-plugin-option');
 			$class     = easy_options('link_class','hashtag-plugin-option');

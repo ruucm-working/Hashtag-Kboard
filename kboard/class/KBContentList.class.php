@@ -211,7 +211,10 @@ class KBContentList {
 			$this->board_id = intval($this->board_id);
 			$where[] = "`board_id`='$this->board_id'";
 		}
-
+		if(strpos($keyword, "#") !== FALSE) {
+			$tag = $keyword;
+			$keyword = '';
+		}
 		$search = esc_sql($search);
 		$keyword = esc_sql($keyword);
 		$tag = esc_sql($tag);
@@ -220,10 +223,11 @@ class KBContentList {
 
 		if(!$with_notice) $where[] = "`notice`=''";
 		if(!$keyword) $where[] = "`parent_uid`='0'";
-		if($keyword && $search) $where[] = "`$search` LIKE '%$keyword%'";
-		else if($keyword && !$search) $where[] = "(`title` LIKE '%$keyword%' OR `content` LIKE '%$keyword%')";
 
-		if($tag) $where[] = "(`content` LIKE '%$tag1%' OR `content` LIKE '%$tag2%')";
+		if($keyword && $search) $where[] = "`$search` LIKE '%$keyword%'";
+		else if($keyword && !$search) {
+			$where[] = "(`title` LIKE '%$keyword%' OR `content` LIKE '%$keyword%')";
+		} else if($tag) $where[] = "(`content` LIKE '%$tag1%' OR `content` LIKE '%$tag2%')";
 
 		if($this->category1){
 			$category1 = esc_sql($this->category1);
