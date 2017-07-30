@@ -216,14 +216,14 @@ class KBContentList {
 		$keyword = esc_sql($keyword);
 		$tag = esc_sql($tag);
 		$tag1 = $tag . ' ';
-		$tag2 = $tag . '/n';
+		$tag2 = $tag . '\n';
 
 		if(!$with_notice) $where[] = "`notice`=''";
 		if(!$keyword) $where[] = "`parent_uid`='0'";
 		if($keyword && $search) $where[] = "`$search` LIKE '%$keyword%'";
 		else if($keyword && !$search) $where[] = "(`title` LIKE '%$keyword%' OR `content` LIKE '%$keyword%')";
 
-		if($tag) $where[] = "(`content` LIKE '%$tag%' OR `content` LIKE '%$tag1%' OR `content` LIKE '%$tag2%')";
+		if($tag) $where[] = "(`content` LIKE '%$tag1%' OR `content` LIKE '%$tag2%')";
 
 		if($this->category1){
 			$category1 = esc_sql($this->category1);

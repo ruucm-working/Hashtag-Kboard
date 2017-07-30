@@ -32,9 +32,24 @@ require_once(dirname(__FILE__).'/options/easy-options.php');
 if(!class_exists('HashtagPluginOption')) {
 	class HashtagPluginOption extends EasyOptions {
 		function init() {
+			add_filter( 'kboard_insert_data', array(&$this,'hashtag_replace') );
 			add_filter( 'kboard_content', array(&$this,'hashtag_regex_replace') );
 			add_action( 'admin_enqueue_scripts', array(&$this,'hastag_plugin_enqueue_script' ) );
 			add_action( 'wp_head', array(&$this,'hashtag_plugin_script'));
+		}
+
+		function hashtag_replace( $data ) {
+			$content = $data['content'];
+			$arr = explode("#", $content);
+			$i = 1;
+
+			while ( $i < count($arr) ) {
+				if(strpos($arr[$i], "\n") === FALSE && strpos($arr[$i], " ") === FALSE) $arr[$i] = $arr[$i] . ' ';
+				$i++;
+			}
+			$content = implode("#", $arr);
+			$data['content'] = $content;
+			return $data;
 		}
 		
 		function hashtag_regex_replace( $content ) {
@@ -91,7 +106,7 @@ if(!class_exists('HashtagPluginOption')) {
 				.$class a {
 					color: $color !important;
 					background-color: $bgcolor !important;
-					text-decoration:none;
+					text-decoration:none !important;
 					$add
 				}
 				.$class a:hover {
